@@ -25,7 +25,7 @@ plt.style.use('physrev.mplstyle') # Set full path to if physrev.mplstyle is not 
 plt.rcParams['figure.dpi'] = "300"
 ```
 
-The line `plt.rcParams['figure.dpi'] = "300"` is for convenience: it makes the otherwise small-sized figure appear larger 
+The line `plt.rcParams['figure.dpi'] = "300"` is for convenience; it makes the otherwise small-sized figure appear larger 
 when printed out in the notebook.
 
 A basic example is the following:
@@ -58,7 +58,7 @@ This produces the following figure:
 <img src="/figs/example.png" width=75%>
 </p>
 
-You can now use this image in a `tex` document. Usually, my `documentclass` has:
+We can now use this image in a `tex` document. Usually, my `documentclass` has:
 
 ```tex
 \documentclass[aps, 10pt, prd,

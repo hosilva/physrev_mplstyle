@@ -1,14 +1,28 @@
+### Color scheme and line styles
+#
+# The default color scheme is the one from Mathematica
+# https://mathematica.stackexchange.com/questions/54629/what-are-the-standard-colors-for-plots-in-mathematica-10
+#
+# Additional line style takes from
+# https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
+#
+axes.prop_cycle : (cycler('color', ['5d81b4', 'e09b24', '8eb031', 'eb6235', '8678b2', 'c46e1a', '5c9dc7', 'ffbf00', 'a5609c']) + cycler('ls', ['-', '--', '-.', (0, (1,0.85)), (0, (3, 1, 1, 1, 1, 1)), (0, (3, 1, 1, 1)), (0, (5, 1)), ':', (4, (10, 3))]))
+
 ### Axes
 axes.titlesize : large
 axes.labelsize : 9
 axes.formatter.use_mathtext : True
 axes.linewidth : 0.5
 
+### Grid lines
+grid.linewidth : 0.5
+grid.linestyle : dashed
+grid.color : 'xkcd:light gray'
+
 ### Lines
-lines.linewidth : 1.0
+lines.linewidth : 0.75
 lines.markersize : 10
 hatch.linewidth: 0.25
-
 patch.antialiased   : True
 
 ### Ticks
@@ -30,8 +44,8 @@ ytick.labelsize: 9
 
 ytick.left: True
 ytick.right: True
-ytick.major.size: 4.0
-ytick.minor.size: 2.0
+ytick.major.size: 3.0
+ytick.minor.size: 1.5
 ytick.major.width: 0.5
 ytick.minor.width: 0.5
 ytick.direction: in
@@ -45,11 +59,18 @@ ytick.minor.pad: 5.0
 xtick.labelsize: 9
 
 ### Legend
-legend.frameon: False
-legend.fontsize: 9
+legend.frameon: True
+legend.fontsize: 8
+legend.handlelength: 1.375
+legend.labelspacing: 0.4
+legend.columnspacing: 1
+legend.facecolor: 'white'
+legend.edgecolor: 'white'
+legend.framealpha: 1
+legend.title_fontsize: 8
 
 ### Figure size
-figure.figsize: 5.0, 3.0
+figure.figsize: 3.25, 2.0
 figure.subplot.left: 0.125
 figure.subplot.bottom: 0.175
 figure.subplot.top: 0.95
@@ -64,3 +85,5 @@ font.serif: cmr10
 
 ### Saving figures
 path.simplify : True
+savefig.bbox : tight
+savefig.pad_inches : 0.05

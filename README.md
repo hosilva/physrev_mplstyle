@@ -78,7 +78,7 @@ and we can insert our figure as
 ```
 
 <p align="center">
-<img src="/figs/in_tex.png" width=100%>
+<img src="/figs/in_tex.png" width=90%>
 </p>
 
 And that's it.

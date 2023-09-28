@@ -28,8 +28,8 @@ patch.antialiased   : True
 ### Ticks
 xtick.top: True
 xtick.bottom: True
-xtick.major.size: 4.0
-xtick.minor.size: 2.0
+xtick.major.size: 3.0
+xtick.minor.size: 1.5
 xtick.major.width: 0.5
 xtick.minor.width: 0.5
 xtick.direction: in

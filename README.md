@@ -34,7 +34,7 @@ A basic example is the following:
 f, ax = plt.subplots(1, 1)
 
 x = np.linspace(0, 1)
-s = np.flip(np.arange(1, 1 + 9/10., 1/10))
+s = np.flip(np.arange(1, 1 + 9/10., 1/10.))
 
 for slope in s:
     ax.plot(x, slope * x, label="{:0.1f}".format(slope))

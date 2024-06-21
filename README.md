@@ -9,7 +9,8 @@ In particular:
 * It sets axes and tick labels font sizes to match that of `revtex4-2`'s default 10pt. Labels have some "breathing" space from the figure's frame.
 * Figure's width is set as to use of most of the [column-width space](https://tex.stackexchange.com/questions/184045/how-many-pixels-inches-or-centi-meters-is-a-linewidth-in-a-two-columned-article) available when using the double-column format.
 * Figure's heigth is such that `width / height ~ golden ratio`.
-* Uses [Mathematica](www.wolfram.com/mathematica)'s default color scheme for up to nine colours.
+* Uses [Mathematica](www.wolfram.com/mathematica)'s default color palette for up to nine colours.
+* Has the option to use [gnuplot](http://www.gnuplot.info)'s default color palette for up to eight colours.
 * Has additional tweaks to the default `legend`, `grid` and line styles.
 
 ## Usage
@@ -82,6 +83,12 @@ and we can insert our figure as
 </p>
 
 And that's it.
+
+To use the `gnuplot` colour palette, comment line `9` in `physrev.mplstyle` and uncomment line `13`. Here is an example:
+
+<p align="center">
+<img src="/figs/example_gp.png" width=75%>
+</p>
 
 ## Resources for the plotting aficionado
 

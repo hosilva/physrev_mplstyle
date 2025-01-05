@@ -7,7 +7,7 @@
 # https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
 #
 axes.prop_cycle : (cycler('color', ['5d81b4', 'e09b24', '8eb031', 'eb6235', '8678b2', 'c46e1a', '5c9dc7', 'ffbf00', 'a5609c']) + cycler('ls', ['-', '--', '-.', (0, (1,0.85)), (0, (3, 1, 1, 1, 1, 1)), (0, (3, 1, 1, 1)), (0, (5, 1)), ':', (4, (10, 3))]))
- 
+
 # Use this if you want to use the default gnuplot palette (up to 8 colors)
 # The default palette can be found by typing 'show linetype' in gnuplot.
 # axes.prop_cycle : (cycler('color', ['9400d3', '009e73', '56b4e9', 'e69f00', 'f0e442', '0072b2', 'e51e10', 'k']) + cycler('ls', ['-', '--', '-.', (0, (1,0.85)), (0, (3, 1, 1, 1, 1, 1)), (0, (3, 1, 1, 1)), (0, (5, 1)), ':']))
@@ -25,7 +25,7 @@ grid.linestyle : dashed
 grid.color : 'xkcd:light gray'
 
 ### Lines
-lines.linewidth : 0.75
+lines.linewidth : 0.6
 lines.markersize : 10
 hatch.linewidth: 0.25
 patch.antialiased   : True
@@ -82,11 +82,17 @@ figure.subplot.top: 0.95
 figure.subplot.right: 0.95
 figure.autolayout : False
 
-### Fonts
-text.usetex: False
+### Fonts (computer modern)
+text.usetex: True
 mathtext.fontset: cm
 font.family: serif
 font.serif: cmr10
+### Fonts (times)
+# text.usetex:False
+# mathtext.fontset: stix
+# font.family: serif
+# font.serif: Times New Roman
+# font.weight: regular
 
 ### Saving figures
 path.simplify : True

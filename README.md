@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 %config InlineBackend.figure_format='retina' # Optional
 
-plt.style.use('physrev.mplstyle') # Set full path to if physrev.mplstyle is not in the same in directory as the notebook
+plt.style.use('physrev.mplstyle') # Set full path to physrev.mplstyle if the file is not in the same in directory as the notebook
 plt.rcParams['figure.dpi'] = "300"
 ```
 
